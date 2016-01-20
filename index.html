@@ -26,14 +26,14 @@
     <div class="col-md-4"></div>
     <div class="col-md-4">
 
-      <div ng-controller='display' class='display'> <p>
+      <div ng-controller='Display as dis' class='display'> <p>
         <!-- {{total}} -->
         {{num}}
       </p></div>
-      <button ng-click='num = 1' class='box'><p>1</p></button>
-      <button ng-click='num = 2'class='box'><p>2</p></button>
-      <button ng-click='num = 3'class='box'><p>3</p></button>
-      <button ng-click='opr = +'class='box sym'><p>+</p></button>
+      <button ng-click='dis.num = "1"' class='box'><p>1</p></button>
+      <button ng-click='dis.num = "2"' class='box'><p>2</p></button>
+      <button ng-click='dis.num = "3"' class='box'><p>3</p></button>
+      <button ng-click='cal.calculate = "+"' class='box sym'><p>+</p></button>
     </div>
     <div class="col-md-4"></div>
   </div>

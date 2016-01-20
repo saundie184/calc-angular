@@ -1,14 +1,23 @@
-var app = angular.module("calcApp",[]);
+var app = angular.module("calcApp", []);
 
-app.controller('display', function($scope) {
-    // var vm = this;
-    // vm.total = 'The total';
+app.controller('Display', function($scope) {
+  var vm = this,
+    prevNum = '',
+    currentState = true,
+    previousOperator;
 
-    $scope.total= $scope.num;
-//can access num over here
+  vm.total = 'The total';
 
-    // $scope.add ='';
-    // $scope.subtract= '';
-    // $scope.multiply= '';
+  //TODO define map for operators
+  var operatorMap = {
+    '+': function(a, b) {
+        return parseInt(a) + parseInt(b);
+      }
+      //add more operators
+  };
+  // $scope.total= $scope.num;
+  //can access num over here
 
-  });
+
+
+});
