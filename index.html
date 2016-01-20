@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html ng-app='calc'>
+
+<head>
+  <meta charset="utf-8">
+  <title>Calc</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <link rel='stylesheet' href="styles.css">
+</head>
+
+<body>
+  <div class='container'>
+<div class='row top'>
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+
+      <div ng-controller='display' class='display'> <p>
+        {{num}}
+      </p></div>
+      <button ng-click='num = 1' class='box'><p>1</p></button>
+      <button ng-click='num = 2'class='box'><p>2</p></button>
+      <button ng-click='num = 3'class='box'><p>3</p></button>
+      <button ng-click='opr = +'class='box sym'><p>+</p></button>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <button class='box'><p>4</p></button>
+      <button class='box'><p>5</p></button>
+      <button class='box'><p>6</p></button>
+      <button class='box sym'><p>-</p></button>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <button class='box'><p>7</p></button>
+      <button class='box'><p>8</p></button>
+      <button class='box'><p>9</p></button>
+      <button class='box sym'><p>x</p></button>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <button class='box'></button>
+      <button class='box'></button>
+      <button class='box'><p>0</p></button>
+      <button class='box sym'>=</button>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</div>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- Angular-->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
